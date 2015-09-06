@@ -1,0 +1,261 @@
+#include "dominion.h"
+#include "rngs.h"
+#include "interface.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void print_static_state(struct gameState* g)
+{
+	printf("State: \n");
+	printf("\toutpostPlayed: %d\n", g->outpostPlayed);
+	printf("\toutpostTurn: %d\n", g->outpostTurn);
+	printf("\twhoseTurn: %d\n", g->whoseTurn);
+	printf("\tPhase: %d\n", g->phase);
+}
+END_COMMON_HEADER
+
+taran_test
+	int randomSeed = 1;
+	int numPlayers = 2;
+	struct gameState G;
+	struct gameState* gStatePtr = &G;
+	int player_id = 0;
+
+	int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, feast,
+				sea_hag, tribute, smithy};
+
+
+	printf("Starting unit test for card Feast\n");
+
+
+ 	int initFailed = initializeGame(numPlayers, kingdomCards, randomSeed, gStatePtr);
+	if (initFailed) {
+		printf("initializeGame() failed. Program terminating.\n");
+		exit(1);
+	}
+
+	//Specifically modify the gameState
+	int bonus = 0;
+	int handPos = 3;
+	int pre_hand_count = G.handCount[player_id];
+	G.whoseTurn = player_id;	
+	G.hand[player_id][handPos] = feast;
+	int pre_duchy_count = supplyCount(duchy, gStatePtr);
+	struct gameState pre_call_state;
+	memcpy((void*) &pre_call_state, gStatePtr, sizeof(struct gameState));
+
+	int ret = cardEffect(feast, duchy, -1,-1, gStatePtr, handPos, &bonus);
+
+	if (ret >= 0) {
+		printf("SUCCESS: Feast is returning success on a buyable card.\n");
+
+		// Compare what shouldn't change
+		int compare_unchanged = memcmp((void*) pre_call_state.embargoTokens, (void*) gStatePtr->embargoTokens, (void*)&(gStatePtr->phase) - (void*)gStatePtr->embargoTokens);
+		if (compare_unchanged != 0) {
+			printf("FAILURE: Playing Feast has changed the game state prior to the phase location. It should not tamper with this information.\n");
+			print_static_state(&pre_call_state);
+			print_static_state(gStatePtr);
+			return 1;
+		}
+
+		if (G.discardCount[player_id] != 1) {
+
+			printf("FAILURE: Feast preserved player's discard count.\n");
+			return 1;
+		} else {
+			printf("SUCCESS: Feast incremented the players discard count.\n");
+
+		}
+		
+		if (G.discard[player_id][0] != duchy) {
+			printf("FAILURE: Feast did not place purchased duchy in discard.\n");
+			return 1;
+		} else {
+			printf("SUCCESS: Feast placed duchy in discard.\n");
+		}
+
+		if (G.handCount[player_id] != pre_hand_count - 1){
+			printf("FAILURE: Hand count not decremented properly.\n");
+			return 1;
+		} else {
+			printf("SUCCESS: Hand count decremented properly.\n");
+		}
+
+		if (pre_duchy_count != (supplyCount(duchy, gStatePtr) + 1)) {
+			printf("FAILURE: Duchy count not decremented.\n");
+			return 1;
+		} else {
+			printf("SUCCESS: Duchy count decremented properly.\n");
+		}
+
+	}
+
+	printf("\n\n");
+	return 0;
+
+taran_test
+	int randomSeed = 1;
+	int numPlayers = 2;
+	struct gameState G;
+	struct gameState* gStatePtr = &G;
+	int player_id = 0;
+
+	int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, feast,
+				sea_hag, tribute, smithy};
+
+
+	printf("Starting unit test for card Feast\n");
+
+
+ 	int initFailed = initializeGame(numPlayers, kingdomCards, randomSeed, gStatePtr);
+	if (initFailed) {
+		printf("initializeGame() failed. Program terminating.\n");
+		exit(1);
+	}
+
+	//Specifically modify the gameState
+	int bonus = 0;
+	int handPos = 3;
+	int pre_hand_count = G.handCount[player_id];
+	G.whoseTurn = player_id;	
+	G.hand[player_id][handPos] = feast;
+	int pre_adv_count = supplyCount(adventurer, gStatePtr);
+	struct gameState pre_call_state;
+	memcpy((void*) &pre_call_state, gStatePtr, sizeof(struct gameState));
+
+	int ret = cardEffect(feast, adventurer, -1,-1, gStatePtr, handPos, &bonus);
+
+	if (ret >= 0) {
+		printf("FAILURE: Feast is returning success on a non-buyable card.\n");
+
+		// Compare what shouldn't change
+		int compare_unchanged = memcmp((void*) pre_call_state.embargoTokens, (void*) gStatePtr->embargoTokens, (void*)&(gStatePtr->phase) - (void*)gStatePtr->embargoTokens);
+		if (compare_unchanged != 0) {
+			printf("FAILURE: Playing Feast has changed the game state prior to the phase location. It should not tamper with this information.\n");
+			print_static_state(&pre_call_state);
+			print_static_state(gStatePtr);
+			return 1;
+		}
+
+		if (G.discardCount[player_id] == 0) {
+
+			printf("SUCCESS: Feast preserved player's discard count.\n");
+
+		} else {
+			printf("FAILURE: Feast incremented the players discard count.\n");
+			return 1;
+
+		}
+		
+		if (G.discard[player_id][0] != adventurer) {
+			printf("SUCCESS: Feast did not place purchased duchy in discard.\n");
+
+		} else {
+			printf("FAILURE: Feast placed adventurer in discard.\n");
+			return 1;
+		}
+
+		if (G.handCount[player_id] == pre_hand_count){
+			printf("SUCCESS: Hand count not decremented.\n");
+
+		} else {
+			printf("FAILURE: Hand count decremented when card shouldnt have been played.\n");
+			return 1;
+		}
+
+		if (pre_adv_count != (supplyCount(adventurer, gStatePtr))) {
+			printf("FAILURE: Adventurer count decremented.\n");
+			return 1;
+		} else {
+			printf("SUCCESS: Adventurer count not decremented.\n");
+		}
+
+	}
+
+	printf("\n\n");
+	return 0;
+
+taran_test
+	int randomSeed = 1;
+	int numPlayers = 2;
+	struct gameState G;
+	struct gameState* gStatePtr = &G;
+	int player_id = 0;
+
+	int kingdomCards[10] = {adventurer, gardens, embargo, village, minion, mine, feast,
+				sea_hag, tribute, smithy};
+
+
+	printf("Starting unit test for card Feast\n");
+
+
+ 	int initFailed = initializeGame(numPlayers, kingdomCards, randomSeed, gStatePtr);
+	if (initFailed) {
+		printf("initializeGame() failed. Program terminating.\n");
+		exit(1);
+	}
+
+	//Specifically modify the gameState
+	int bonus = 0;
+	int handPos = 3;
+	int pre_hand_count = G.handCount[player_id];
+	G.whoseTurn = player_id;	
+	G.hand[player_id][handPos] = feast;
+	int pre_gold_count = supplyCount(gold, gStatePtr);
+	struct gameState pre_call_state;
+	memcpy((void*) &pre_call_state, gStatePtr, sizeof(struct gameState));
+
+	int ret = cardEffect(feast, gold, -1,-1, gStatePtr, handPos, &bonus);
+
+	if (ret >= 0) {
+		printf("FAILURE: Feast is returning success on a non-buyable card.\n");
+
+		// Compare what shouldn't change
+		int compare_unchanged = memcmp((void*) pre_call_state.embargoTokens, (void*) gStatePtr->embargoTokens, (void*)&(gStatePtr->phase) - (void*)gStatePtr->embargoTokens);
+		if (compare_unchanged != 0) {
+			printf("FAILURE: Playing Feast has changed the game state prior to the phase location. It should not tamper with this information.\n");
+			print_static_state(&pre_call_state);
+			print_static_state(gStatePtr);
+			return 1;
+		}
+
+		if (G.discardCount[player_id] == 0) {
+
+			printf("SUCCESS: Feast preserved player's discard count.\n");
+
+		} else {
+			printf("FAILURE: Feast incremented the players discard count.\n");
+			return 1;
+
+		}
+		
+		if (G.discard[player_id][0] != adventurer) {
+			printf("SUCCESS: Feast did not place purchased adventurer in discard.\n");
+
+		} else {
+			printf("FAILURE: Feast placed adventurer in discard.\n");
+			return 1;
+		}
+
+		if (G.handCount[player_id] == pre_hand_count){
+			printf("SUCCESS: Hand count not decremented.\n");
+
+		} else {
+			printf("FAILURE: Hand count decremented when card shouldnt have been played.\n");
+			return 1;
+		}
+
+		if (pre_gold_count != (supplyCount(gold, gStatePtr))) {
+			printf("FAILURE: gold count changed.\n");
+			return 1;
+
+		} else {
+			printf("SUCCESS: gold count unchanged.\n");
+
+		}
+
+	}
+
+	printf("\n\n");
+	return 0;

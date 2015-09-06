@@ -1,0 +1,717 @@
+All tests are based on below settings
+Players
+3
+Kingdom Cards
+['Cutpurse', 'Smithy', 'Embargo', 'Feast', 'Adventurer', 'Gardens', 'Great Hall', 'Sea Hag', 'Village', 'Mine']
+Testing Initialize Game with Bad set of Kingdom Cardsand Number of players
+Initilize Game() is invalid for kingdomCards selected and players: 3
+Expected: -1
+Actual: -1 
+TEST PASS
+Testing Supply count of copper cards for all number of players and with valid kingdom cards
+TEST PASS
+Taking correct count of Copper cards: 32 in supply for Players : 4
+TESTING drawCard()
+Before drawing
+Deck
+{0: ['Copper', 'Copper', 'Estate', 'Copper', 'Copper'], 1: ['Copper', 'Copper', 'Estate', 'Copper', 'Copper'], 2: ['Copper', 'Copper', 'Estate', 'Copper', 'Copper']}
+Hand
+{0: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper'], 1: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper'], 2: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper']}
+TEST PASS
+After drawing
+Deck
+{0: ['Copper', 'Copper', 'Estate', 'Copper'], 1: ['Copper', 'Copper', 'Estate', 'Copper'], 2: ['Copper', 'Copper', 'Estate', 'Copper']}
+Hand
+{0: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper', 'Copper'], 1: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper', 'Copper'], 2: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper', 'Copper']}
+TESTING UpdateCoins()
+['Copper']
+TEST PASS
+Return Value for player: 0, bonus 0 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 0, handCount : 1, Coin Value = 1
+Expected = 1
+TEST PASS
+Return Value for player: 0, bonus 1 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 1, handCount : 1, Coin Value = 2
+Expected = 2
+TEST PASS
+Return Value for player: 0, bonus 2 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 2, handCount : 1, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 0, bonus 3 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 3, handCount : 1, Coin Value = 4
+Expected = 4
+['Copper', 'Copper']
+TEST PASS
+Return Value for player: 0, bonus 0 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 0, handCount : 2, Coin Value = 2
+Expected = 2
+TEST PASS
+Return Value for player: 0, bonus 1 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 1, handCount : 2, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 0, bonus 2 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 2, handCount : 2, Coin Value = 4
+Expected = 4
+TEST PASS
+Return Value for player: 0, bonus 3 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 3, handCount : 2, Coin Value = 5
+Expected = 5
+['Copper', 'Copper', 'Copper']
+TEST PASS
+Return Value for player: 0, bonus 0 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 0, handCount : 3, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 0, bonus 1 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 1, handCount : 3, Coin Value = 4
+Expected = 4
+TEST PASS
+Return Value for player: 0, bonus 2 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 2, handCount : 3, Coin Value = 5
+Expected = 5
+TEST PASS
+Return Value for player: 0, bonus 3 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 3, handCount : 3, Coin Value = 6
+Expected = 6
+['Copper']
+TEST PASS
+Return Value for player: 1, bonus 0 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 0, handCount : 1, Coin Value = 1
+Expected = 1
+TEST PASS
+Return Value for player: 1, bonus 1 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 1, handCount : 1, Coin Value = 2
+Expected = 2
+TEST PASS
+Return Value for player: 1, bonus 2 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 2, handCount : 1, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 1, bonus 3 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 3, handCount : 1, Coin Value = 4
+Expected = 4
+['Copper', 'Copper']
+TEST PASS
+Return Value for player: 1, bonus 0 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 0, handCount : 2, Coin Value = 2
+Expected = 2
+TEST PASS
+Return Value for player: 1, bonus 1 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 1, handCount : 2, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 1, bonus 2 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 2, handCount : 2, Coin Value = 4
+Expected = 4
+TEST PASS
+Return Value for player: 1, bonus 3 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 3, handCount : 2, Coin Value = 5
+Expected = 5
+['Copper', 'Copper', 'Copper']
+TEST PASS
+Return Value for player: 1, bonus 0 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 0, handCount : 3, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 1, bonus 1 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 1, handCount : 3, Coin Value = 4
+Expected = 4
+TEST PASS
+Return Value for player: 1, bonus 2 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 2, handCount : 3, Coin Value = 5
+Expected = 5
+TEST PASS
+Return Value for player: 1, bonus 3 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 3, handCount : 3, Coin Value = 6
+Expected = 6
+['Copper']
+TEST PASS
+Return Value for player: 2, bonus 0 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 0, handCount : 1, Coin Value = 1
+Expected = 1
+TEST PASS
+Return Value for player: 2, bonus 1 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 1, handCount : 1, Coin Value = 2
+Expected = 2
+TEST PASS
+Return Value for player: 2, bonus 2 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 2, handCount : 1, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 2, bonus 3 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 3, handCount : 1, Coin Value = 4
+Expected = 4
+['Copper', 'Copper']
+TEST PASS
+Return Value for player: 2, bonus 0 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 0, handCount : 2, Coin Value = 2
+Expected = 2
+TEST PASS
+Return Value for player: 2, bonus 1 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 1, handCount : 2, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 2, bonus 2 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 2, handCount : 2, Coin Value = 4
+Expected = 4
+TEST PASS
+Return Value for player: 2, bonus 3 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 3, handCount : 2, Coin Value = 5
+Expected = 5
+['Copper', 'Copper', 'Copper']
+TEST PASS
+Return Value for player: 2, bonus 0 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 0, handCount : 3, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 2, bonus 1 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 1, handCount : 3, Coin Value = 4
+Expected = 4
+TEST PASS
+Return Value for player: 2, bonus 2 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 2, handCount : 3, Coin Value = 5
+Expected = 5
+TEST PASS
+Return Value for player: 2, bonus 3 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 3, handCount : 3, Coin Value = 6
+Expected = 6
+TESTING buyCard_gainCard()
+Before Buying
+Card want to Buy:
+7
+Adventurer
+Cost of Card
+6
+Coins Available:
+3
+numBuys available
+1
+Whose Turn:
+2
+Discard
+{0: [], 1: [], 2: []}
+Supply of Card
+10
+Invalid Input:No numBuys OR No enough Coins OR SupplyEmpty
+TESTING discardCard()
+Before discard
+Card to discard:
+Estate
+hand before discarding
+{0: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper'], 1: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper'], 2: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper']}
+Coins available:
+3
+TEST PASS
+discardCard() is successfull for player : 0 discarded Estate
+After Discarding
+Card Discarded:
+Estate
+Hand after Discarding
+{0: ['Estate', 'Copper', 'Copper', 'Copper'], 1: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper'], 2: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper']}
+Coins Available:
+3
+Testing getCost()
+Getting cost of card: Smithy
+Cost of card : Smithy is 4
+TESTING playCard()
+Before playing
+hand of Player 0:
+['Estate', 'Estate', 'Copper', 'Copper', 'Copper', 'Great Hall']
+discard
+[]
+deck
+['Copper', 'Copper', 'Estate', 'Copper', 'Copper']
+Card played by Player : 0 is 
+Great Hall
+TEST PASS
+After playing
+hand
+['Estate', 'Estate', 'Copper', 'Copper', 'Copper', 'Copper']
+discard
+[]
+deck
+['Copper', 'Copper', 'Estate', 'Copper']
+Buys
+1
+Coins
+4
+Card played by Player:0 is 
+Great Hall
+Testing scoreFor()
+Hand: 0
+['Estate', 'Estate', 'Copper', 'Copper', 'Copper']
+Deck: 0
+['Copper', 'Copper', 'Estate', 'Copper', 'Copper']
+Discard: 0
+[]
+Score for player : 0 is:
+3
+Hand: 1
+['Estate', 'Estate', 'Copper', 'Copper', 'Copper']
+Deck: 1
+['Copper', 'Copper', 'Estate', 'Copper', 'Copper']
+Discard: 1
+[]
+Score for player : 1 is:
+3
+Hand: 2
+['Estate', 'Estate', 'Copper', 'Copper', 'Copper']
+Deck: 2
+['Copper', 'Copper', 'Estate', 'Copper', 'Copper']
+Discard: 2
+[]
+Score for player : 2 is:
+3
+Tetsing getWinners
+Score of Player: 0
+9
+Score of Player: 1
+9
+Score of Player: 2
+3
+Player Won:
+[1, 1, 0]
+Testing isGameOver
+Game Over: SUpply of province exhausted
+Supply of province:
+0
+Game Over:Supply of 3 piles is empty
+0
+0
+0
+Testing endTurn
+Whose Turn:
+0
+After endTurn:
+Whose Turn:
+1
+Testing Initialize Game with Bad set of Kingdom Cardsand Number of players
+Initilize Game() is invalid for kingdomCards selected and players: 3
+Expected: -1
+Actual: -1 
+TEST PASS
+Testing Supply count of copper cards for all number of players and with valid kingdom cards
+TEST PASS
+Taking correct count of Copper cards: 32 in supply for Players : 4
+TESTING drawCard()
+Before drawing
+Deck
+{0: ['Copper', 'Copper', 'Estate', 'Copper', 'Copper'], 1: ['Copper', 'Copper', 'Estate', 'Copper', 'Copper'], 2: ['Copper', 'Copper', 'Estate', 'Copper', 'Copper']}
+Hand
+{0: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper'], 1: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper'], 2: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper']}
+TEST PASS
+After drawing
+Deck
+{0: ['Copper', 'Copper', 'Estate', 'Copper'], 1: ['Copper', 'Copper', 'Estate', 'Copper'], 2: ['Copper', 'Copper', 'Estate', 'Copper']}
+Hand
+{0: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper', 'Copper'], 1: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper', 'Copper'], 2: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper', 'Copper']}
+TESTING UpdateCoins()
+['Copper']
+TEST PASS
+Return Value for player: 0, bonus 0 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 0, handCount : 1, Coin Value = 1
+Expected = 1
+TEST PASS
+Return Value for player: 0, bonus 1 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 1, handCount : 1, Coin Value = 2
+Expected = 2
+TEST PASS
+Return Value for player: 0, bonus 2 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 2, handCount : 1, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 0, bonus 3 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 3, handCount : 1, Coin Value = 4
+Expected = 4
+['Copper', 'Copper']
+TEST PASS
+Return Value for player: 0, bonus 0 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 0, handCount : 2, Coin Value = 2
+Expected = 2
+TEST PASS
+Return Value for player: 0, bonus 1 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 1, handCount : 2, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 0, bonus 2 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 2, handCount : 2, Coin Value = 4
+Expected = 4
+TEST PASS
+Return Value for player: 0, bonus 3 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 3, handCount : 2, Coin Value = 5
+Expected = 5
+['Copper', 'Copper', 'Copper']
+TEST PASS
+Return Value for player: 0, bonus 0 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 0, handCount : 3, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 0, bonus 1 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 1, handCount : 3, Coin Value = 4
+Expected = 4
+TEST PASS
+Return Value for player: 0, bonus 2 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 2, handCount : 3, Coin Value = 5
+Expected = 5
+TEST PASS
+Return Value for player: 0, bonus 3 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 0, bonus : 3, handCount : 3, Coin Value = 6
+Expected = 6
+['Copper']
+TEST PASS
+Return Value for player: 1, bonus 0 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 0, handCount : 1, Coin Value = 1
+Expected = 1
+TEST PASS
+Return Value for player: 1, bonus 1 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 1, handCount : 1, Coin Value = 2
+Expected = 2
+TEST PASS
+Return Value for player: 1, bonus 2 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 2, handCount : 1, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 1, bonus 3 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 3, handCount : 1, Coin Value = 4
+Expected = 4
+['Copper', 'Copper']
+TEST PASS
+Return Value for player: 1, bonus 0 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 0, handCount : 2, Coin Value = 2
+Expected = 2
+TEST PASS
+Return Value for player: 1, bonus 1 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 1, handCount : 2, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 1, bonus 2 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 2, handCount : 2, Coin Value = 4
+Expected = 4
+TEST PASS
+Return Value for player: 1, bonus 3 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 3, handCount : 2, Coin Value = 5
+Expected = 5
+['Copper', 'Copper', 'Copper']
+TEST PASS
+Return Value for player: 1, bonus 0 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 0, handCount : 3, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 1, bonus 1 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 1, handCount : 3, Coin Value = 4
+Expected = 4
+TEST PASS
+Return Value for player: 1, bonus 2 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 2, handCount : 3, Coin Value = 5
+Expected = 5
+TEST PASS
+Return Value for player: 1, bonus 3 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 1, bonus : 3, handCount : 3, Coin Value = 6
+Expected = 6
+['Copper']
+TEST PASS
+Return Value for player: 2, bonus 0 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 0, handCount : 1, Coin Value = 1
+Expected = 1
+TEST PASS
+Return Value for player: 2, bonus 1 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 1, handCount : 1, Coin Value = 2
+Expected = 2
+TEST PASS
+Return Value for player: 2, bonus 2 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 2, handCount : 1, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 2, bonus 3 and hand count : 1 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 3, handCount : 1, Coin Value = 4
+Expected = 4
+['Copper', 'Copper']
+TEST PASS
+Return Value for player: 2, bonus 0 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 0, handCount : 2, Coin Value = 2
+Expected = 2
+TEST PASS
+Return Value for player: 2, bonus 1 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 1, handCount : 2, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 2, bonus 2 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 2, handCount : 2, Coin Value = 4
+Expected = 4
+TEST PASS
+Return Value for player: 2, bonus 3 and hand count : 2 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 3, handCount : 2, Coin Value = 5
+Expected = 5
+['Copper', 'Copper', 'Copper']
+TEST PASS
+Return Value for player: 2, bonus 0 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 0, handCount : 3, Coin Value = 3
+Expected = 3
+TEST PASS
+Return Value for player: 2, bonus 1 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 1, handCount : 3, Coin Value = 4
+Expected = 4
+TEST PASS
+Return Value for player: 2, bonus 2 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 2, handCount : 3, Coin Value = 5
+Expected = 5
+TEST PASS
+Return Value for player: 2, bonus 3 and hand count : 3 is 0
+Expected value : 0
+TEST PASS
+Testing with all copper coins for player : 2, bonus : 3, handCount : 3, Coin Value = 6
+Expected = 6
+TESTING buyCard_gainCard()
+Before Buying
+Card want to Buy:
+7
+Adventurer
+Cost of Card
+6
+Coins Available:
+3
+numBuys available
+1
+Whose Turn:
+2
+Discard
+{0: [], 1: [], 2: []}
+Supply of Card
+10
+Invalid Input:No numBuys OR No enough Coins OR SupplyEmpty
+TESTING discardCard()
+Before discard
+Card to discard:
+Estate
+hand before discarding
+{0: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper'], 1: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper'], 2: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper']}
+Coins available:
+3
+TEST PASS
+discardCard() is successfull for player : 0 discarded Estate
+After Discarding
+Card Discarded:
+Estate
+Hand after Discarding
+{0: ['Estate', 'Copper', 'Copper', 'Copper'], 1: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper'], 2: ['Estate', 'Estate', 'Copper', 'Copper', 'Copper']}
+Coins Available:
+3
+Testing getCost()
+Getting cost of card: Smithy
+Cost of card : Smithy is 4
+TESTING playCard()
+Before playing
+hand of Player 0:
+['Estate', 'Estate', 'Copper', 'Copper', 'Copper', 'Great Hall']
+discard
+[]
+deck
+['Copper', 'Copper', 'Estate', 'Copper', 'Copper']
+Card played by Player : 0 is 
+Great Hall
+TEST PASS
+After playing
+hand
+['Estate', 'Estate', 'Copper', 'Copper', 'Copper', 'Copper']
+discard
+[]
+deck
+['Copper', 'Copper', 'Estate', 'Copper']
+Buys
+1
+Coins
+4
+Card played by Player:0 is 
+Great Hall
+Testing scoreFor()
+Hand: 0
+['Estate', 'Estate', 'Copper', 'Copper', 'Copper']
+Deck: 0
+['Copper', 'Copper', 'Estate', 'Copper', 'Copper']
+Discard: 0
+[]
+Score for player : 0 is:
+3
+Hand: 1
+['Estate', 'Estate', 'Copper', 'Copper', 'Copper']
+Deck: 1
+['Copper', 'Copper', 'Estate', 'Copper', 'Copper']
+Discard: 1
+[]
+Score for player : 1 is:
+3
+Hand: 2
+['Estate', 'Estate', 'Copper', 'Copper', 'Copper']
+Deck: 2
+['Copper', 'Copper', 'Estate', 'Copper', 'Copper']
+Discard: 2
+[]
+Score for player : 2 is:
+3
+Tetsing getWinners
+Score of Player: 0
+9
+Score of Player: 1
+9
+Score of Player: 2
+3
+Player Won:
+[1, 1, 0]
+Testing isGameOver
+Game Over: SUpply of province exhausted
+Supply of province:
+0
+Game Over:Supply of 3 piles is empty
+0
+0
+0
+Testing endTurn
+Whose Turn:
+0
+After endTurn:
+Whose Turn:
+1

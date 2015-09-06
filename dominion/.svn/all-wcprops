@@ -1,0 +1,407 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion
+END
+cbmc_full.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/cbmc_full.c
+END
+testBuyCard.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/testBuyCard.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/Makefile
+END
+unittest_drawCard.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/unittest_drawCard.py
+END
+thetest
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/thetest
+END
+foo
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/foo
+END
+unittest_initGame.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/unittest_initGame.py
+END
+unoresults
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/unoresults
+END
+scan
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/scan
+END
+unittest_playCard.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/unittest_playCard.py
+END
+testDrawCard
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/testDrawCard
+END
+playdom2
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/playdom2
+END
+rngs.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/rngs.c
+END
+js.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/js.c
+END
+dominion.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/dominion.c
+END
+rngs.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/rngs.h
+END
+buy2.prop
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/buy2.prop
+END
+randomtestadventurer.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/randomtestadventurer.c
+END
+dominion.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/dominion.h
+END
+unittest_UpdateCoins.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/unittest_UpdateCoins.py
+END
+playdom
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/playdom
+END
+turn.prop
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/turn.prop
+END
+out
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/out
+END
+testShuffle.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/testShuffle.c
+END
+unittest_buyCard&gainCard.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/unittest_buyCard&gainCard.py
+END
+buy.prop
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/buy.prop
+END
+betterTestDrawCard.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/betterTestDrawCard.c
+END
+binsearch.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/binsearch.c
+END
+randomhistory.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/randomhistory.txt
+END
+allwarnings
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/allwarnings
+END
+unitest.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/unitest.py
+END
+differential.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/differential.py
+END
+dominion_helpers.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/dominion_helpers.h
+END
+testInit.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/testInit.c
+END
+initTest.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/initTest.c
+END
+player
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/player
+END
+output.txt.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/output.txt.txt
+END
+badTestDrawCard
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/badTestDrawCard
+END
+gentest.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/gentest.py
+END
+dimout
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/dimout
+END
+unitest_gainCard.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/unitest_gainCard.py
+END
+testing1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/testing1.txt
+END
+scanlog.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/scanlog.py
+END
+supplyTest.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/supplyTest.c
+END
+player.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/player.c
+END
+badTestDrawCard.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/badTestDrawCard.c
+END
+play.prop
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/play.prop
+END
+o
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/o
+END
+unittest.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/unittest.c
+END
+foo.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/foo.c
+END
+rt.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/rt.c
+END
+adt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/adt
+END
+playdom2.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/playdom2.c
+END
+testDrawCard.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/testDrawCard.c
+END
+it
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/it
+END
+cbmc_dominion.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/cbmc_dominion.c
+END
+interface.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/interface.c
+END
+unittest_Shuffle.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/unittest_Shuffle.py
+END
+cbmc_dominion.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/cbmc_dominion.h
+END
+interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/interface.h
+END
+playdom.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/playdom.c
+END
+out.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/out.c
+END
+unittest_discardCard.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/unittest_discardCard.py
+END
+randomtestcard.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/randomtestcard.c
+END
+cbmc_drawCard.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/cbmc_drawCard.c
+END
+diffdom.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/diffdom.py
+END
+dominion.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/54/trunk/projects/kollipal/dominion/dominion.py
+END

@@ -1,0 +1,15 @@
+I have converted dominion.c to dominion.py
+with initialize game not taking gamestate as input anymore and returning a gamestate.
+i implemented 13 kingdomcards in cardEffect with 5 known Bugs which wont carsh.
+
+and I wrote unit tests for below functions:
+initialize game
+shuffle
+buycard&gainCard
+discardCard
+playCard
+drawCrad
+updateCoins
+which will take random input and stops if assert fails
+you can find unit tests in files with 'unittest_' prefix
+
